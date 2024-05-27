@@ -261,3 +261,17 @@ h1 {
     transform: translateY(0);
   }
 }
+
+.center {
+  text-align: center;
+}
+
+.error {
+  text-align: center;
+  background-color: #e06b6b;
+  color: #29251c ;
+  padding: 15px;
+  margin: auto;
+  width: 400px;
+  border-radius: 10px;
+}
