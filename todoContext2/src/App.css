@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    min-height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.header {
+    margin: 1em;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.9rem 2rem;
+    border-radius: 0.5rem;
+    background-color: yellow;
+    width: 680px;
+    min-width: 480px
+  }
+
+  .form-container input{
+    padding: 0.7rem 1em;
+    height: 48px;
+    color: black;
+    width: 60%;
+  }
+  .form-container input::placeholder{
+    font-weight: bold;
+  }
+  
+  .form-container button {
+    height: 48px;
+    padding: 1em;
+    width: 40%;
+  }
