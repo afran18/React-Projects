@@ -6,7 +6,10 @@ const initialState = {
         {
             id: 1,
             todo: "Dummy Todo",
-            isComplete: false
+            isComplete: false,
+            editFlag: false,
+            editID: '',
+            textToEdit: ''
         }
     ],
 }
@@ -31,6 +34,10 @@ export const TodoProvider = ( {children} ) => {
     return (
         <TodoContext.Provider value = {{
             todos: state.todos,
+            editFlag: state.editFlag,
+            editID: state.editID,
+            textToEdit: state.textToEdit,
+
             dispatch
         }}
         >

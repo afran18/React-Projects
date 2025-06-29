@@ -25,6 +25,14 @@ const TodoReducer = (state, action) => {
                     ...state,
                     todos: state.todos.filter(todo => todo.id !== action.payload)
                 }
+
+            case "EDIT_CONFIG":
+                return {
+                    ...state,
+                    editFlag: !state.editFlag,
+                    textToEdit: action.payload.text,
+                    editID: action.payload.id
+                }
     
         default:
             return state

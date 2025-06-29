@@ -14,6 +14,10 @@ function TodoItem({id, todo, isComplete}) {
         dispatch( { type: "DELETE_TODO", payload: id} )
     }
 
+    const editTodo = () => {
+        dispatch({type: "EDIT_CONFIG", payload: {todo, id}})
+    }
+
   return (
     <li>
          <input
@@ -48,7 +52,7 @@ function TodoItem({id, todo, isComplete}) {
             >
                 ❌
             </button>  */}
-            <button>Edit</button>
+            <button onClick={editTodo()}>Edit</button>
             <button onClick={deleteTodo}>Delete</button>
     </li>
   )
