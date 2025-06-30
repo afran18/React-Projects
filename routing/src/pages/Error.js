@@ -1,5 +1,6 @@
 import MainNavigation from "../components/MainNavigation";
 
+
 function ErrorPage() {
   return (
     <>
